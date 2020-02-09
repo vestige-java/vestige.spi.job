@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.gaellalire.vestige</groupId>
   <artifactId>vestige.spi.job</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
   <name>Vestige :: SPI :: Job</name>
   <build>
@@ -219,7 +219,7 @@
   <scm>
     <connection>scm:git:git@gaellalire.fr:gaellalire/vestige.spi.job.git</connection>
     <developerConnection>scm:git:git@gaellalire.fr:gaellalire/vestige.spi.job.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>vestige.spi.job-1.1</tag>
   </scm>
   <reporting>
     <plugins>
