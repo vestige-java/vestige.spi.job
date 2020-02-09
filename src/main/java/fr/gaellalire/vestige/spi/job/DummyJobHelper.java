@@ -17,42 +17,19 @@
 
 package fr.gaellalire.vestige.spi.job;
 
-import fr.gaellalire.vestige.spi.job.JobHelper;
-import fr.gaellalire.vestige.spi.job.TaskHelper;
-
 /**
  * @author Gael Lalire
  */
-public final class DummyJobHelper implements JobHelper {
+public final class DummyJobHelper extends AbstractJobHelper {
 
     public static final DummyJobHelper INSTANCE = new DummyJobHelper();
 
-    private DummyJobHelper() {
-    }
-
-    private static final DummyActionTask DUMMY_ACTION_TASK = new DummyActionTask();
-
-    /**
-     * @author Gael Lalire
-     */
-    private static final class DummyActionTask implements TaskHelper {
-
-        private DummyActionTask() {
-        }
-
-        @Override
-        public void setProgress(final float progress) {
-        }
-
-        @Override
-        public void setDone() {
-        }
-
-    }
-
     @Override
     public TaskHelper addTask(final String taskDescription) {
-        return DUMMY_ACTION_TASK;
+        return DummyTaskHelper.INSTANCE;
+    }
+
+    private DummyJobHelper() {
     }
 
 }

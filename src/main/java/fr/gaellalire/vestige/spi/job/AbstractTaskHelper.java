@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 The Apache Software Foundation.
+ * Copyright 2019 The Apache Software Foundation.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +17,10 @@
 package fr.gaellalire.vestige.spi.job;
 
 /**
- * Implementations of this interface are done by the client. All client implementations should extends {@link AbstractTaskHelper} to keep forward compatibility.
+ * This class will provide default implementation of future method of {@link TaskHelper} to keep forward compatibility.
  * @author Gael Lalire
+ * @since 1.1
  */
-public interface TaskHelper {
-
-    void setProgress(float progress);
-
-    void setDone();
+public abstract class AbstractTaskHelper implements TaskHelper {
 
 }

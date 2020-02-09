@@ -17,6 +17,7 @@
 package fr.gaellalire.vestige.spi.job;
 
 /**
+ * Implementations of this interface are done by the client. All client implementations should extends {@link AbstractJobHelper} to keep forward compatibility.
  * @author Gael Lalire
  */
 public interface JobHelper {
